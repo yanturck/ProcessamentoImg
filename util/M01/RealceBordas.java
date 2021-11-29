@@ -1,4 +1,6 @@
-package util;
+package util.M01;
+
+import util.Imagem;
 
 // Realce de Bordas - Nao direcional
 // Realce de Bordas - Direcional

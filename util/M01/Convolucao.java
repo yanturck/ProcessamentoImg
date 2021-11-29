@@ -1,4 +1,6 @@
-package util;
+package util.M01;
+
+import util.Imagem;
 
 // Equalizacao do Histograma
 // Convolucao - Passa Alta

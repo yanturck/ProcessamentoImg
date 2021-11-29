@@ -1,12 +1,13 @@
 
-import util.Convolucao;
-import util.EqHistograma;
+import util.M01.Convolucao;
+import util.M01.EqHistograma;
 import util.Imagem;
-import util.MudancaSCores;
-import util.OperacoesAritmeticas;
-import util.OperacoesLogicas;
-import util.RealceBordas;
-import util.Stretching;
+import util.M01.MudancaSCores;
+import util.M01.OperacoesAritmeticas;
+import util.M01.OperacoesLogicas;
+import util.M01.RealceBordas;
+import util.M01.Stretching;
+import util.M02.MoforlogiaBin;
 
 public class Main {
 
@@ -21,12 +22,13 @@ public class Main {
     static String IMAGEM_PAISAGEM = "imagens/paisagem.jpeg";
 
     public static void main(String args[]) {
-        operacoesAritmeticas();
-        equalizacaoHistograma();
-        convolucao();
-        stretching();
-        operacoesLogicas();
-        mudancaCores();
+        // operacoesAritmeticas();
+        // equalizacaoHistograma();
+        // convolucao();
+        // stretching();
+        // operacoesLogicas();
+        // mudancaCores();
+        testeMoforlogiaBin();
     }
 
     private static void operacoesAritmeticas() {
@@ -117,5 +119,13 @@ public class Main {
         RealceBordas.realceBordasRoberts(imgA).mostrar("Realce de Borda Roberts - G");
         RealceBordas.realceBordasIsotropico(imgA).mostrar("Realce de Borda Isotrópico - G");
         RealceBordas.realceBordasNDirecional(imgA); // Realce de bordas - Laplace
+    }
+
+    private static void testeMoforlogiaBin () {
+        Imagem imgB = new Imagem(Main.IMAGEM_B);
+        imgB.mostrar("Imagem B");
+        MoforlogiaBin mb = new MoforlogiaBin();
+        int [][]ee = {{255, 255, 255},{255, 255, 255},{255, 255, 255}};
+        mb.erosao(imgB, ee).mostrar("Erosão");
     }
 }

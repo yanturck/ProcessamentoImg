@@ -1,4 +1,6 @@
-package util;
+package util.M01;
+
+import util.Imagem;
 
 public class OperacoesAritmeticas {
     public static Imagem adicao( Imagem imgA, Imagem imgB) {

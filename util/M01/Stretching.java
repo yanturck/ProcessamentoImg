@@ -1,4 +1,6 @@
-package util;
+package util.M01;
+
+import util.Imagem;
 
 public class Stretching {
     public static final int LINEAR = 1;

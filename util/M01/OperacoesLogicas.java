@@ -1,4 +1,6 @@
-package util;
+package util.M01;
+
+import util.Imagem;
 
 public class OperacoesLogicas {
     public static Imagem not (Imagem imgA) {
