@@ -127,5 +127,11 @@ public class Main {
         MoforlogiaBin mb = new MoforlogiaBin();
         int [][]ee = {{255, 255, 255},{255, 255, 255},{255, 255, 255}};
         mb.erosao(imgB, ee).mostrar("Erosão");
+        mb.dilatacao(imgB, ee).mostrar("Dilatação");
+        mb.bordaInterna(imgB, ee).mostrar("Borda Interna");
+        mb.bordaExterna(imgB, ee).mostrar("Borda Externa");
+        mb.abertura(imgB, ee).mostrar("Abertura");
+        mb.fechamento(imgB, ee).mostrar("Fechamento");
+        mb.esqueleto(imgB, ee, 2).mostrar("Esqueleto");
     }
 }
